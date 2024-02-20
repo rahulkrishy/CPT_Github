@@ -53,8 +53,17 @@ You can even switch between branches and work on different projects without them
 " git checkout -b <branch> " - Create a new branch called ＜branch＞
 " git checkout <branch> " - Switch between branches ＜branch＞
 
-// newBranch edits
+step 14: Rename the branch
 
+
+Step 15: Delete the branch
+(1)(delete in local branch repo)
+" git branch -d <branch_name> " - Deletes the specified branch. If the branch has unmerged changes, Git will prevent the deletion,   and you'll need to use -D to force the deletion. 'Or
+" git branch -D <branch_name> " - Forces the deletion of the specified branch, even if it has unmerged changes. Use this with caution, as it discards any changes in the branch.
+(2)(To delete in remote branch repo)
+" git push origin --delete <branch_name> " - To delete a remote branch
+(3)(remove any references to deleted branches from your local repository)
+" git fetch --prune " - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
 
 
 
