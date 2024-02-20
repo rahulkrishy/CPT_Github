@@ -1,6 +1,4 @@
-<!-- Git & GitHub -->
-
-<!-- 
+// Git & GitHub
 
 step 1: Install Git - version control software. (https://git-scm.com/downloads)
 
@@ -42,10 +40,6 @@ If Developer A tries to edit code that Developer B is editing a conflict may occ
 (" git diff " - command helps find differences between states of a repository/files. This is useful in predicting and preventing merge conflicts)
 
 step 13: Git Branching and merging
-
-
-
-
- -->
+(to be continued)
 
 
