@@ -6,3 +6,6 @@ print("welcome to rahulkrishy github first repository")
 
 # This code print "Thank you"
 print("Thank you")
+
+# This code print "End"
+print("End")
