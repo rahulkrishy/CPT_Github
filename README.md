@@ -42,7 +42,6 @@ step 12: Git merge conflicts
          (Version control systems are all about managing contributions between multiple distributed authors (usually developers).
          Sometimes multiple developers may try to edit the same content. 
          If Developer A tries to edit code that Developer B is editing a conflict may occur.)
-
          (ex: Conflicts generally arise when two people have changed the same lines in a file, or if one developer deleted a file while another developer was modifying it.
          In these cases, Git cannot automatically determine what is correct. Conflicts only affect the developer conducting the merge, the rest of the team is unaware of the conflict.
          Git will mark the file as being conflicted and halt the merging process. It is then the developers' responsibility to resolve the conflict.
