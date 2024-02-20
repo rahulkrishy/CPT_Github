@@ -54,10 +54,17 @@ You can even switch between branches and work on different projects without them
 " git checkout <branch> " - Switch between branches ＜branch＞
 
 step 14: Rename the branch
+(1)(To rename in local branch repo)
+" git checkout <other_branch> " - Before renaming the branch, switch to a branch other than the one you want to rename. You cannot rename the branch you are currently on.
+" git branch -m <old_branch_name> <new_branch_name> " - rename the old_branch_name with new_branch_name
+(2)(To rename in remote branch repo - If the branch has been pushed to the remote repository, you may want to update the remote branch name as well. Use the following command to delete the old remote branch and push the new one:)
+" git push origin --delete <old_branch_name> " - ( Renaming a branch in Git doesn't create a copy of the branch; instead, it directly renames the existing branch. However, when it comes to the remote repository, Git maintains separate references for local and remote branches. When you rename a branch locally using git branch -m, the remote repository still has a reference to the old branch name. To update the remote reference and reflect the name change, you use git push origin --delete <old_branch_name> to delete the old branch on the remote repository, followed by git push origin <new_branch_name> to push the renamed branch. )
+" git push origin <new_branch_name> " - command pushes the renamed branch to the remote repository with the new name.
 
 
 Step 15: Delete the branch
-(1)(delete in local branch repo)
+(1)(To delete in local branch repo)
+" git checkout <other_branch> " - Before deleting the branch, switch to a branch other than the one you want to deleting. You cannot delete the branch you are currently on.
 " git branch -d <branch_name> " - Deletes the specified branch. If the branch has unmerged changes, Git will prevent the deletion,   and you'll need to use -D to force the deletion. 'Or
 " git branch -D <branch_name> " - Forces the deletion of the specified branch, even if it has unmerged changes. Use this with caution, as it discards any changes in the branch.
 (2)(To delete in remote branch repo)
