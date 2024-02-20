@@ -30,9 +30,9 @@ step 9: " git commit " - command captures a snapshot of the project's currently 
 step 10: " git push " - command is used to upload local repository content to a remote repository 'or
          " git push origin <branch> " - command is used to upload local repository content to a specific remote <branch> repository
 
-step 11: (To get lastest file from the remote repo to our local repo)use
-         " git pull " - command is used to fetch and download content from a remote repository and immediately update the local repository to match that content (git pull = git fetch + git  merge)                                                                                                                                              
-         " git push origin <branch> " - command is used to upload local repository content to a specific remote <branch> repository
+step 11: (To get lastest file from the remote repo to our local repo) use
+        " git pull " - command is used to fetch and download content from a remote repository and immediately update the local repository to match that content (git pull = git fetch + git merge) 
+        " git pull origin <branch> " - command is used to download content from a remote <branch> repository and immediately update the local repository.
 
 step 12: Git merge conflicts
 (Version control systems are all about managing contributions between multiple distributed authors (usually developers).
