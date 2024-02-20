@@ -48,8 +48,10 @@ When the work is complete, a branch can be merged with the main project.
 You can even switch between branches and work on different projects without them interfering with each other.)
 
 " git branch " - List all of the branches in your repository. 
-" git branch -d <branch> " - Create a new branch called ＜branch＞. This does not check out the new branch.
-" git branch -a " - Rename the current branch to ＜branch＞.
+" git checkout -b <branch> " - Create a new branch called ＜branch＞
+" git checkout <branch> " - Switch between branches ＜branch＞
+
+// newBranch
 
 
 
