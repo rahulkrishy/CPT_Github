@@ -27,10 +27,12 @@ step 8: " git add <file> " - command adds a file change in the working directory
 step 9: " git commit " - command captures a snapshot of the project's currently staged changes 'or
         " git commit -m "message/comment" *filename " - command commits with message for filename(*filename is optional to include)
 
-step 10: " git push " - command is used to upload local repository content to a remote repository
+step 10: " git push " - command is used to upload local repository content to a remote repository 'or
+         " git push origin <branch> " - command is used to upload local repository content to a specific remote <branch> repository
 
-step 11: (To get lastest file from the remote repo to our local repo)
-         use " git pull " - command is used to fetch and download content from a remote repository and immediately update the local repository to match that content (git pull = git fetch + git merge)
+step 11: (To get lastest file from the remote repo to our local repo)use
+         " git pull " - command is used to fetch and download content from a remote repository and immediately update the local repository to match that content (git pull = git fetch + git  merge)                                                                                                                                              
+         " git push origin <branch> " - command is used to upload local repository content to a specific remote <branch> repository
 
 step 12: Git merge conflicts
 (Version control systems are all about managing contributions between multiple distributed authors (usually developers).
@@ -47,11 +49,11 @@ step 13: Git Branching and merging
 When the work is complete, a branch can be merged with the main project.
 You can even switch between branches and work on different projects without them interfering with each other.)
 
-" git branch " - List all of the branches in your repository. 
+" git branch " - List all of the branches in your repository.
 " git checkout -b <branch> " - Create a new branch called ＜branch＞
 " git checkout <branch> " - Switch between branches ＜branch＞
 
-// newBranch
+// newBranch edits
 
 
 
