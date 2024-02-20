@@ -47,11 +47,11 @@ step 13: Git Branching and merging
 When the work is complete, a branch can be merged with the main project.
 You can even switch between branches and work on different projects without them interfering with each other.)
 
-" git branch " - List all of the branches in your repository. 
+" git branch " - List all of the branches in your repository.
 " git checkout -b <branch> " - Create a new branch called ＜branch＞
 " git checkout <branch> " - Switch between branches ＜branch＞
 
-// newBranch
+// newBranch edits
 
 
 
