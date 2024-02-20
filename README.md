@@ -21,6 +21,7 @@ step 06: Open device terminal (*or Vscode editor), and type " git clone reposito
 
 step 07: Once the repository is cloned,
          create a project file and follow below steps to push from your local repository to remote(online) GitHub repository. 
+         (General Rule: if any changes made in local repo, we need to do nessecary steps reflet in remote repo, and vice versa)
          (from local to remote(online): add(staging)->commit->push, from remote(online) to local: pull)
 
 step 08: " git add <file> " - command adds a file change in the working directory to the staging area 'or 
@@ -73,6 +74,7 @@ Step 15: Delete the branch
          " git push origin --delete <branch_name> " - To delete a remote branch
          (3)(remove any references to deleted branches from your local repository)
          " git fetch --prune " - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
+
 
 
 
