@@ -42,6 +42,16 @@ If Developer A tries to edit code that Developer B is editing a conflict may occ
 (" git diff " - command helps find differences between states of a repository/files. This is useful in predicting and preventing merge conflicts)
 
 step 13: Git Branching and merging
-(to be continued)
+"git branch" is a new/separate version of the main repository.
+(Branches allow you to work on different parts of a project without impacting the main branch.
+When the work is complete, a branch can be merged with the main project.
+You can even switch between branches and work on different projects without them interfering with each other.)
+
+" git branch " - List all of the branches in your repository. 
+" git branch -d <branch> " - Create a new branch called ＜branch＞. This does not check out the new branch.
+" git branch -a " - Rename the current branch to ＜branch＞.
+
+
+
 
 
