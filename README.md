@@ -10,9 +10,11 @@ step 4: Next we need to configure our github account username and email to devic
 open terminal and type " git config --global user.name "username" " and 
 " git config --global user.email "Email Id" "
 
-step 5: Click Create a "new repository" in Github and name it, then copy the repository https url (A 'Git repository' is a virtual storage of your project. It allows you to save versions of your code, which you can access when needed.)
+step 5: Click Create a "new repository" in Github and name it, then copy the repository https url 
+(A 'Git repository' is a virtual storage of your project. It allows you to save versions of your code, which you can access when needed.)
 
-step 6: Open device terminal (*or Vscode editor), and type " git clone repository_Url " to clone repository, if done then we will see " .git " folder in hidden views option in the our local directory (Don't do any modification to .git folder, its the link between our local and remote(online) repositories)  
+step 6: Open device terminal (*or Vscode editor), and type " git clone repository_Url " to clone repository, if done then we will see " .git " folder in hidden views option in the our local directory
+(Don't do any modification to .git folder, its the link between our local and remote(online) repositories)  
 
 step 7: Once the repository is cloned, create a project file and follow below steps to push from your local repository to remote(online) GitHub repository 
 (from local to remote(online): add(staging)->commit->push, from remote(online) to local: pull)
