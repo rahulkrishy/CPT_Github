@@ -65,7 +65,7 @@ step 14: Rename the branch
          " git push origin --delete <old_branch_name> " - ( Renaming a branch in Git doesn't create a copy of the branch; instead, it directly renames the existing branch. However, when it comes to the remote repository, Git maintains separate references for local and remote branches. When you rename a branch locally using git branch -m, the remote repository still has a reference to the old branch name. To update the remote reference and reflect the name change, you use git push origin --delete <old_branch_name> to delete the old branch on the remote repository, followed by git push origin <new_branch_name> to push the renamed branch. )
          " git push origin <new_branch_name> " - command pushes the renamed branch to the remote repository with the new name.
 
-Step 15: Delete the branch
+step 15: Delete the branch
          (1)(To delete in local branch repo)
          " git checkout <other_branch> " - Before deleting the branch, switch to a branch other than the one you want to deleting. You cannot delete the branch you are currently on.
          " git branch -d <branch_name> " - Deletes the specified branch. If the branch has unmerged changes, Git will prevent the deletion,   and you'll need to use -D to force the deletion. 'Or
@@ -74,6 +74,9 @@ Step 15: Delete the branch
          " git push origin --delete <branch_name> " - To delete a remote branch
          (3)(remove any references to deleted branches from your local repository)
          " git fetch --prune " - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
+
+step 16: Reset/Revert the branch
+         ()
 
 
 
