@@ -55,7 +55,8 @@ step 13: Git Branching and merging
          You can even switch between branches and work on different projects without them interfering with each other)
         " git branch " - List all of the branches in your repository(branch is a new/separate version of the main repository)
         " git checkout -b <branch> " - Create a new branch called ＜branch＞
-        " git checkout <branch> " - Switch between branches ＜branch＞ .
+        " git checkout <branch> " - Switch between branches ＜branch＞
+        " git branch -a " - command is used to list all branches in a Git repository, including both local branches and remote branches('-a' option stands for "all").
 
 step 14: Rename the branch
          (1)(To rename in local branch repo)
@@ -65,7 +66,7 @@ step 14: Rename the branch
          " git push origin --delete <old_branch_name> " - ( Renaming a branch in Git doesn't create a copy of the branch; instead, it directly renames the existing branch. However, when it comes to the remote repository, Git maintains separate references for local and remote branches. When you rename a branch locally using git branch -m, the remote repository still has a reference to the old branch name. To update the remote reference and reflect the name change, you use git push origin --delete <old_branch_name> to delete the old branch on the remote repository, followed by git push origin <new_branch_name> to push the renamed branch. )
          " git push origin <new_branch_name> " - command pushes the renamed branch to the remote repository with the new name.
 
-Step 15: Delete the branch
+step 15: Delete the branch
          (1)(To delete in local branch repo)
          " git checkout <other_branch> " - Before deleting the branch, switch to a branch other than the one you want to deleting. You cannot delete the branch you are currently on.
          " git branch -d <branch_name> " - Deletes the specified branch. If the branch has unmerged changes, Git will prevent the deletion,   and you'll need to use -D to force the deletion. 'Or
@@ -74,6 +75,22 @@ Step 15: Delete the branch
          " git push origin --delete <branch_name> " - To delete a remote branch
          (3)(remove any references to deleted branches from your local repository)
          " git fetch --prune " - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
+
+step 16: stash/Reset/Revert the branch
+         ( 'Git stash' is a command that is used to temporarily save and untrack your local changes that you haven't staged yet. It is useful when you need to switch branches or work on another task but don't want to lose your uncommitted changes.
+         "git stash" - will save your 'uncommitted changes' to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
+         "git stash pop" - will restore your uncommitted changes to your working directory and re-track them.
+         "git stash list" - will show you a list of all the stashed changes that you have made.)
+         ()
+         ()
+
+step 17: git log
+         "git log" - command will display the commit history with the most recent commits listed at the top. You can use the arrow keys to navigate through the log, and press q to exit the log viewer.
+         " git log --oneline " - will show each commit on a single line, displaying only the commit hash and the commit message.
+         " git log <branch_name> " - commit history of a specific branch
+         (limit the number of commits displayed or specify a range of commits)
+         " git log -n 5 " - Show the last 5 commits
+         " git log <commit_hash>..HEAD " - Show commits from a specific commit to the latest
 
 
 
