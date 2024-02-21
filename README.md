@@ -77,7 +77,7 @@ step 15: Delete the branch
 
 step 16: Reset/Revert the branch
          ( 'Git stash' is a command that is used to temporarily save and untrack your local changes that you haven't staged yet. It is useful when you need to switch branches or work on another task but don't want to lose your uncommitted changes.
-         "git stash" - will save your uncommitted changes to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
+         "git stash" - will save your 'uncommitted changes' to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
          "git stash pop" - will restore your uncommitted changes to your working directory and re-track them.
          "git stash list" - will show you a list of all the stashed changes that you have made.)
 
