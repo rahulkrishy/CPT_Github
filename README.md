@@ -84,14 +84,6 @@ step 16: stash/Reset/Revert the branch
          ()
          ()
 
-step 17: git log
-         "git log" - command will display the commit history with the most recent commits listed at the top. You can use the arrow keys to navigate through the log, and press q to exit the log viewer.
-         " git log --oneline " - will show each commit on a single line, displaying only the commit hash and the commit message.
-         " git log <branch_name> " - commit history of a specific branch
-         (limit the number of commits displayed or specify a range of commits)
-         " git log -n 5 " - Show the last 5 commits
-         " git log <commit_hash>..HEAD " - Show commits from a specific commit to the latest
-
 
 
 
