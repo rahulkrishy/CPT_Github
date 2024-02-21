@@ -55,7 +55,8 @@ step 13: Git Branching and merging
          You can even switch between branches and work on different projects without them interfering with each other)
         " git branch " - List all of the branches in your repository(branch is a new/separate version of the main repository)
         " git checkout -b <branch> " - Create a new branch called ＜branch＞
-        " git checkout <branch> " - Switch between branches ＜branch＞ .
+        " git checkout <branch> " - Switch between branches ＜branch＞
+        " git branch -a " - command is used to list all branches in a Git repository, including both local branches and remote branches('-a' option stands for "all").
 
 step 14: Rename the branch
          (1)(To rename in local branch repo)
