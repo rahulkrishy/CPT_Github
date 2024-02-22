@@ -75,6 +75,7 @@ step 15: Delete the branch
          " git push origin --delete <branch_name> " - To delete a remote branch
          (3)(remove any references to deleted branches from your local repository)
          " git fetch --prune " - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
+         (To delete a file, just push to branch after changes)
 
 step 16: stash/Reset/Revert the branch
          ( 'Git stash' is a command that is used to temporarily save and untrack your local changes that you haven't staged yet. It is useful when you need to switch branches or work on another task but don't want to lose your uncommitted changes.
