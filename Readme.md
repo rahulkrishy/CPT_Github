@@ -81,22 +81,26 @@ step 16: Delete the branch
          " git fetch --prune " - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
          (To delete a file, just push to branch after changes)
 
-step 17: stash/Reset/Revert the branch
-         ( 'Git stash' is a command that is used to temporarily save and untrack your local changes that you haven't staged yet. It is useful when you need to switch branches or work on another task but don't want to lose your uncommitted changes.
-         "git stash" - will save your 'uncommitted changes' to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
-         "git stash pop" - will restore your uncommitted changes to your working directory and re-track them.
-         "git stash list" - will show you a list of all the stashed changes that you have made.)
-         ()
-         ()
-
-step 18: git log
+step 17: git log
          "git log" - command will display the commit history with the most recent commits listed at the top. You can use the arrow keys to navigate through the log, and press q to exit the log viewer.
          " git log --oneline " - will show each commit on a single line, displaying only the commit hash and the commit message.
          " git log <branch_name> " - commit history of a specific branch
          (limit the number of commits displayed or specify a range of commits)
          " git log -n 5 " - Show the last 5 commits
+         " git log --oneline -n 5 " - will show last 5 commits on a single line,
          " git log <commit_hash>..HEAD " - Show commits from a specific commit to the latest
 
-
-
-
+step 18: stash/Revert/Reset the branch
+         -( 'Git stash' is a command that is used to temporarily save and untrack your local changes that you haven't staged yet. It is useful when you need to switch branches or work on another task but don't want to lose your uncommitted changes.
+         "git stash" - will save your 'uncommitted changes' to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
+         "git stash pop" - will restore your uncommitted changes to your working directory and re-track them.
+         "git stash list" - will show you a list of all the stashed changes that you have made.)
+         -( "git revert <commit_sha>" - command creates a new commit that undoes the changes introduced by the commit with the hash commit_sha, after running the git revert command, Git will open a text editor (such as Vim or the default text editor) for you to enter a commit message. This message typically describes the reason for the revert. ( type ~ :wq(write and quit) ),Save and close the editor, If there are conflicts during the revert process, Git will mark conflicted areas in the affected files. Manually resolve conflicts in each file marked by Git.) 
+         -( "git revert <commit_sha>" - command in Git is a versatile command that is used to manipulate the commit history, move the branch pointer, and modify the staging area and working directory. There are different modes of git reset based on the options provided, they are: 
+         "git reset --soft <commit_sha>" - Soft Reset: Moves branch pointer, keeps changes staged.
+         "git reset <commit_sha>" - Mixed Reset: Moves branch pointer, unstages changes, keeps changes in working directory.
+         "git reset --hard <commit_sha>" - Hard Reset: Moves branch pointer, discards changes in staging area and working directory.
+         "git reset <file_name>" - Reset Specific File: Unstages changes for a specific file.)
+         (revert vs reset: 
+         Revert: Safely undoes changes, preserving commit history.
+         Reset: Versatile command for moving the branch pointer, unstaging changes, or discarding changes. Requires caution, especially with --hard option.)
