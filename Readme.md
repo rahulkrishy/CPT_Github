@@ -70,7 +70,9 @@
     < git checkout [other_branch] > - Before renaming the branch, switch to a branch other than the one you want to rename. You cannot rename the branch you are currently on.
     < git branch -m [old_branch_name] [new_branch_name] > - rename the old_branch_name with new_branch_name
     (2)(To rename in remote branch repo - If the branch has been pushed to the remote repository, you may want to update the remote branch name as well. Use the following command to delete the old remote branch and push the new one)
-    < git push origin --delete [old_branch_name] > - ( Renaming a branch in Git does not create a copy of the branch, instead, it directly renames the existing branch. However, when it comes to the remote repository, Git maintains separate references for local and remote branches. 
+    < git push origin --delete [old_branch_name] > - ( Renaming a branch in Git does not create a copy of the branch instead,
+    it directly renames the existing branch. However, when it comes to the remote repository,
+    Git maintains separate references for local and remote branches. 
     when you rename a branch locally using < git branch -m >, the remote repository still has a reference to the old branch name. 
     To update the remote reference and reflect the name change, you use < git push origin --delete [old_branch_name] > to delete the old branch on the remote repository, followed by git push origin [new_branch_name] to push the renamed branch)
     < git push origin <new_branch_name> > - command pushes the renamed branch to the remote repository with the new name.
@@ -98,7 +100,8 @@
 18: stash/Revert/Reset the branch
     -( < Git stash > is a command that is used to temporarily save and untrack your local changes that you have not staged yet.
     It is useful when you need to switch branches or work on another task but do not want to lose your uncommitted changes.
-    < git stash > - will save your uncommitted changes to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
+    < git stash > - will save your uncommitted changes to a stack and untrack them from your working directory.
+    You can then switch branches or work on another task without having to worry about losing your changes.
     < git stash pop > - will restore your uncommitted changes to your working directory and re-track them.
     < git stash list > - will show you a list of all the stashed changes that you have made.)
     -( < git revert [commit_sha] > - command creates a new commit that undoes the changes introduced by 
@@ -107,7 +110,9 @@
     This message typically describes the reason for the revert. ( type ~ :wq(write and quit) ), Save and close the editor,
     If there are conflicts during the revert process, Git will mark conflicted areas in the affected files.
     Manually resolve conflicts in each file marked by Git.) 
-    -( < git revert [commit_sha] > - command in Git is a versatile command that is used to manipulate the commit history, move the branch pointer, and modify the staging area and working directory. There are different modes of git reset based on the options provided, they are: 
+    -( < git revert [commit_sha] > - command in Git is a versatile command that is used to manipulate the commit history,
+    move the branch pointer, and modify the staging area and working directory.
+    There are different modes of git reset based on the options provided, they are: 
     < git reset --soft [commit_sha] > - Soft Reset: Moves branch pointer, keeps changes staged.
     < git reset [commit_sha] > - Mixed Reset: Moves branch pointer, unstages changes, keeps changes in working directory.
     < git reset --hard [commit_sha] > - Hard Reset: Moves branch pointer, discards changes in staging area and working directory.
