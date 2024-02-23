@@ -1,6 +1,10 @@
 // Git & GitHub
 
-01:     Install Git - version control software. (https://git-scm.com/downloads)
+01:
+```sh
+Install Git - version control software. (https://git-scm.com/downloads)
+```
+    
 
 02:     Sign up to Github - remote(online) software development platform, 
         it's used for storing, tracking, and collaborating on software projects. (https://github.com/)
