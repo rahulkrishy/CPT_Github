@@ -4,10 +4,13 @@
 ```sh
 Install Git - version control software. (https://git-scm.com/downloads)
 ```
-    
-
-02:     Sign up to Github - remote(online) software development platform, 
-        it's used for storing, tracking, and collaborating on software projects. (https://github.com/)
+02:
+```sh
+Sign up to Github - remote(online) software development platform, 
+it's used for storing, tracking, and collaborating on software projects. (https://github.com/)
+```
+     
+```sh
 
 03:     To check git software is installed on your device, open terminal and type 
         " git ", it will pop up list of feature available on it, it not redownload it properly.
@@ -108,3 +111,5 @@ Install Git - version control software. (https://git-scm.com/downloads)
         (revert vs reset: 
         Revert: Safely undoes changes, preserving commit history.
         Reset: Versatile command for moving the branch pointer, unstaging changes, or discarding changes. Requires caution, especially with --hard option.)
+
+```
