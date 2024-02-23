@@ -7,7 +7,7 @@
         it is used for storing, tracking, and collaborating on software projects. (https://github.com/)
 
 03:     To check git software is installed on your device, open terminal and type 
-        " git ", it will pop up list of feature available on it, it not redownload it properly.
+        " git ", it will pop up list of feature available on it, is not redownload it properly.
 
 04:     Next we need to configure our github account username and email to device, 
         open terminal and type " git config --global user.name "username" " and 
