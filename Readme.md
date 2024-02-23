@@ -101,7 +101,9 @@
     < git stash > - will save your uncommitted changes to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
     < git stash pop > - will restore your uncommitted changes to your working directory and re-track them.
     < git stash list > - will show you a list of all the stashed changes that you have made.)
-    -( < git revert [commit_sha] > - command creates a new commit that undoes the changes introduced by the commit with the hash commit_sha, after running the git revert command, Git will open a text editor (such as Vim or the default text editor) for you to enter a commit message.
+    -( < git revert [commit_sha] > - command creates a new commit that undoes the changes introduced by 
+    the commit with the hash commit_sha, after running the git revert command, 
+    Git will open a text editor (such as Vim or the default text editor) for you to enter a commit message.
     This message typically describes the reason for the revert. ( type ~ :wq(write and quit) ), Save and close the editor,
     If there are conflicts during the revert process, Git will mark conflicted areas in the affected files.
     Manually resolve conflicts in each file marked by Git.) 
