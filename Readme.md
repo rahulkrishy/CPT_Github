@@ -26,7 +26,7 @@
     (General Rule: if any changes made in local repo, we need to do nessecary steps reflet in remote repo, and vice versa)
     (from local to remote(online): add(staging)->commit->push, from remote(online) to local: pull)
 
-08: < git add <file> > - command adds a file change in the working directory to the staging area, or 
+08: < git add [file] > - command adds a file change in the working directory to the staging area, or 
     < git add . >      - command adds all files change in the working directory to the staging area.
     (git add does not really affect the repository in any significant way—changes are not actually recorded until you run git commit)
     (< git status > to view the state of the working directory and the staging area).
@@ -52,7 +52,7 @@
     (< git diff > - command helps find differences between states of a repository/files. This is useful in predicting and preventing merge conflicts)  
 
 13: To create an empty file using PowerShell, use
-    < New-Item -ItemType file <file_name.txt> > - command creates a new file named file_name.txt
+    < New-Item -ItemType file [file_name.txt] > - command creates a new file named file_name.txt
     < echo "Hello, this is the content of the file" | Out-File [file_name.txt] > - command echoes (prints) the specified text to Out-File [file_name.txt]
 
 14: Git Branching and merging
@@ -101,7 +101,10 @@
     < git stash > - will save your uncommitted changes to a stack and untrack them from your working directory. You can then switch branches or work on another task without having to worry about losing your changes.
     < git stash pop > - will restore your uncommitted changes to your working directory and re-track them.
     < git stash list > - will show you a list of all the stashed changes that you have made.)
-    -( < git revert [commit_sha] > - command creates a new commit that undoes the changes introduced by the commit with the hash commit_sha, after running the git revert command, Git will open a text editor (such as Vim or the default text editor) for you to enter a commit message. This message typically describes the reason for the revert. ( type ~ :wq(write and quit) ),Save and close the editor, If there are conflicts during the revert process, Git will mark conflicted areas in the affected files. Manually resolve conflicts in each file marked by Git.) 
+    -( < git revert [commit_sha] > - command creates a new commit that undoes the changes introduced by the commit with the hash commit_sha, after running the git revert command, Git will open a text editor (such as Vim or the default text editor) for you to enter a commit message.
+    This message typically describes the reason for the revert. ( type ~ :wq(write and quit) ), Save and close the editor,
+    If there are conflicts during the revert process, Git will mark conflicted areas in the affected files.
+    Manually resolve conflicts in each file marked by Git.) 
     -( < git revert [commit_sha] > - command in Git is a versatile command that is used to manipulate the commit history, move the branch pointer, and modify the staging area and working directory. There are different modes of git reset based on the options provided, they are: 
     < git reset --soft [commit_sha] > - Soft Reset: Moves branch pointer, keeps changes staged.
     < git reset [commit_sha] > - Mixed Reset: Moves branch pointer, unstages changes, keeps changes in working directory.
@@ -110,5 +113,5 @@
     (revert vs reset: 
     Revert: Safely undoes changes, preserving commit history.
     Reset: Versatile command for moving the branch pointer, unstaging changes, or discarding changes. Requires caution, especially with --hard option.)    
-    
+
 ```
