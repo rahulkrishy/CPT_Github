@@ -48,23 +48,23 @@ Create a "new repository" on GitHub and name it. Copy the repository HTTPS URL o
 ```bash
 git init
 ```
-It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
+It can convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
 (A Git repository is a virtual storage of your project. It allows you to save versions of your code, which you can access when needed)
 
 Open your terminal (or VSCode editor) and clone the repository:
 ```bash
 git clone repository_Url
 ```
-if done then we will see ".git" folder in hidden views option in the our local directory
-(Do not do any modification to .git folder, its the link between our local and remote(online) repositories).
+if done then we will see the '.git' folder in the hidden views option in our local directory
+(Do not modify the '.git' folder, it is the link between our local and remote(online) repositories).
 
+## Working with Local and Remote Repositories
 
+Once the repository is cloned, create a project file. To reflect changes from your local repository to the remote GitHub repository, follow these general rules:
+(General Rule: if any changes are made in the local repo, we need to do the necessary steps to reflect in the remote repo, and vice versa).
+From local to remote(online): add (staging) -> commit -> push
+From remote(online) to local: pull
 
-
-07: Once the repository is cloned,
-    create a project file and follow below steps to push from your local repository to remote(online) GitHub repository. 
-    (General Rule: if any changes made in local repo, we need to do nessecary steps reflet in remote repo, and vice versa)
-    (from local to remote(online): add(staging)->commit->push, from remote(online) to local: pull)
 
 
 
