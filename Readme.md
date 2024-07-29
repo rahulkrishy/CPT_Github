@@ -122,5 +122,7 @@
     Reset: Versatile command for moving the branch pointer, unstaging changes, or discarding changes. Requires caution, especially with --hard option.)    
 
 ```
-# License
-[MIT License](LICENSE)
+
+## License
+
+[![license](https://img.shields.io/github/license/rahulkrishy/ELP_Github?style=for-the-badge)](LICENSE)
