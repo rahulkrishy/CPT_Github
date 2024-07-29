@@ -208,12 +208,93 @@ git fetch --prune
 ```
 The above command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote(To delete a file, just push to branch after changes).
 
+## Viewing Commit History
+View commit history: <br>
+command will display the commit history with the most recent commits listed at the top. You can use the arrow keys to navigate through the log, and press q to exit the log viewer.
+```bash
+git log
+```
+
+View commit history in a single line: <br>
+To show each commit on a single line, displaying only the commit hash and the commit message.
+```bash
+git log --oneline
+```
+
+View the commit history of a specific branch:
+```bash
+git log [branch_name]
+```
+
+Limit the number of commits displayed or specify a range of commits:
+```bash
+git log -n 5
+```
+
+Show the last 5 commits in a single line:
+```bash
+git log --oneline -n 5
+```
+
+Show commits from a specific commit to the latest:
+```bash
+git log [commit_hash]..HEAD
+```
+ 
+## Stashing, Reverting, and Resetting Changes
+
+Temporarily save and untrack your local changes that you have not staged yet:
+```bash
+git stash
+```
+The above command will save your uncommitted changes to a stack and untrack them from your working directory.
+It is useful when you need to switch branches or work on another task but do not want to lose your uncommitted changes. You can then switch branches or work on another task without having to worry about losing your changes. <br>
+
+Restore your uncommitted changes:
+```bash
+git stash pop
+```
+The above command will restore your uncommitted changes to your working directory and re-track them. <br>
+
+Show stashed changes:
+```bash
+git stash list
+```
+The above command will show you a list of all the stashed changes that you have made. <br>
+
+Revert changes by creating a new commit:
+```bash
+git revert [commit_sha]
+```
+The above command creates a new commit that undoes the changes introduced by the commit with the hash commit_sha, after running the `git revert` command, Git will open a text editor (such as `Vim` or the default text editor) for you to enter a commit message. This message typically describes the reason for the revert. ( `type ~ :wq`(write and quit)), Save and close the editor, If there are conflicts during the revert process, Git will mark conflicted areas in the affected files. Then Manually resolve conflicts in each file marked by Git.) <br>
+`git revert [commit_sha]` - command in Git is a versatile command that is used to manipulate the commit history, move the branch pointer, and modify the staging area and working directory.
+<br>There are different modes of git reset based on the options provided, they are: <br>
+
+Soft Reset: Moves branch pointer, keeps changes staged.
+```bash
+git reset --soft [commit_sha]
+```
+
+Mixed Reset: Moves branch pointer, unstages changes, keeps changes in working directory.
+```bash
+git reset [commit_sha]
+```
+
+Hard Reset: Moves branch pointer, discards changes in staging area and working directory.
+```bash
+git reset --hard [commit_sha]
+```
+
+Reset specific file: Unstaged changes for a specific file.
+```bash
+git reset [file_name]
+```
+
+(Revert vs. Reset: <br>
+Revert: Safely undoes changes, preserving commit history. <br>
+Reset: Versatile command for moving the branch pointer, unstaging changes, or discarding changes. Requires caution, especially with the --hard option.)
 
 
-
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## License
 
 [![license](https://img.shields.io/github/license/rahulkrishy/ELP_Github?style=for-the-badge)](LICENSE)
