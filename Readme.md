@@ -90,15 +90,40 @@ git commit -m "message/comment" *filename
 (*filename is optional to include)
 
 ## Pushing Changes to Remote Repositories
+Push local repository content to a remote(online) repository:
+```bash
+git push
+```
+Or push to a specific remote branch repository:
+```bash
+git push origin [branch]
+```
 
-## Pulling Changes from Remote Repositories
+## Pulling Changes from Remote(online) Repositories
+Fetch and download content from a remote repository and immediately update the local repository: (git pull=git fetch+git merge)
+```bash
+git pull
+```
+Or download content from a specific remote branch and update the local repository:
+```bash
+git pull origin [branch]
+```
 
-10: < git push > - command is used to upload local repository content to a remote repository, or
-    < git push origin [branch] > - command is used to upload local repository content to a specific remote [branch] repository.
+## Handling Merge Conflicts
+(Version control systems are all about managing contributions between multiple distributed authors (usually developers).
+Sometimes multiple developers may try to edit the same content. 
+If Developer A tries to edit code that Developer B is editing a conflict may occur.)
+(ex: Conflicts generally arise when two people have changed the same lines in a file, or if one developer deleted a file while another developer was modifying it.
+In these cases, Git cannot automatically determine what is correct. Conflicts only affect the developer conducting the merge, the rest of the team is unaware of the conflict.
+Git will mark the file as being conflicted and halt the merging process. It is then the developer's responsibility to resolve the conflict.
+The most direct way to resolve a merge conflict is to manually edit the conflicted file.) <br>
 
-11: (To get lastest file from the remote repo to our local repo) use
-    < git pull > - command is used to fetch and download content from a remote repository and immediately update the local repository to match that content(git pull=git fetch+git merge) 
-    < git pull origin [branch] > - command is used to download content from a remote [branch] repository and immediately update the local repository.
+i.e. Conflicts arise when multiple developers edit the same content. Git will mark the file as conflicted and halt the merging process. Manually resolve conflicts in each file marked by Git. 
+To find differences between states of a repository/files, Use:
+```bash
+git diff
+```
+
 
 
 
