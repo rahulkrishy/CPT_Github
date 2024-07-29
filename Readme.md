@@ -45,7 +45,7 @@ git config --global user.email 'Email Id'
 ```
 
 ## Creating and Cloning Repositories
-Create a "new repository" on GitHub and name it. Copy the repository HTTPS URL or To initialize a new Git repository, use:
+Create a `new repository` on GitHub and name it. Copy the repository HTTPS URL or To initialize a new Git repository, use:
 ```bash
 git init
 ```
@@ -56,14 +56,14 @@ Open your terminal (or VSCode editor) and clone the repository:
 ```bash
 git clone repository_Url
 ```
-if done then we will see the '.git' folder in the hidden views option in our local directory
+if done then we will see the `.git` folder in the hidden views option in our local directory
 (Do not modify the '.git' folder, it is the link between our local and remote(online) repositories).
 
 ## Working with Local and Remote Repositories
 Once the repository is cloned, create a project file. To reflect changes from your local repository to the remote GitHub repository, follow these general rules:
 (General Rule: if any changes are made in the local repo, we need to do the necessary steps to reflect in the remote repo, and vice versa). <br> 
-From local to remote(online): add (staging) -> commit -> push <br> 
-From remote(online) to local: pull
+`From local to remote(online): add (staging) -> commit -> push` <br> 
+`From remote(online) to local: pull`
 
 ## Git Staging and Committing
 Add file changes in the working directory to the staging area:
@@ -157,7 +157,7 @@ git branch -a
 (" -a " option stands for "all").
   
 ## Renaming the Branches
-Rename a branch in the local repository: <br>
+(1) Rename a branch in the local repository: <br>
 Before renaming the branch, switch to a branch other than the one you want to rename. You cannot rename the branch you are currently on. Use
 ```bash
 git checkout [other_branch]
@@ -167,58 +167,48 @@ rename the old_branch_name with new_branch_name
 git branch -m [old_branch_name] [new_branch_name]
 ```
 
-Rename a branch in the remote repository: <br>
+(2) Rename a branch in the remote repository: <br>
 If the branch has been pushed to the remote repository, you may want to update the remote branch name as well. Use the following command to delete the old remote branch and push the new one
 ```bash
 git push origin --delete [old_branch_name]
 ```
 (Renaming a branch in Git does not create a copy of the branch, instead it directly renames the existing branch. 
  However, when it comes to the remote repository, Git maintains separate references for local and remote branches. 
- when you rename a branch locally using 'git branch -m', the remote repository still has a reference to the old branch name. 
- To update the remote reference and reflect the name change, you use 'git push origin --delete [old_branch_name]' to delete the old branch on the remote repository, 
- followed by 'git push origin [new_branch_name]' to push the renamed branch)
+ when you rename a branch locally using `git branch -m`, the remote repository still has a reference to the old branch name. 
+ To update the remote reference and reflect the name change, you use `git push origin --delete [old_branch_name]` to delete the old branch on the remote repository, 
+ followed by `git push origin [new_branch_name]` to push the renamed branch)
 ```bash
 git push origin [new_branch_name]
 ```
 The above command pushes the renamed branch to the remote repository with the new name.
-
-edit...
+    
 ## Deleting the Branches
-Delete a branch in the local repository:
+
+(1) Delete a branch in the local repository:
+Before deleting the branch, switch to a branch other than the one you want to delete. You cannot delete the branch you are currently on.
 ```bash
-git branch
-```
 git checkout [other_branch]
 git branch -d [branch_name]
-
+```
+Deletes the specified branch. If the branch has unmerged changes, Git will prevent the deletion, and you will need to use "-D" to force the deletion. <br>
 Force delete a branch with unmerged changes:
 ```bash
-git branch
-```
 git branch -D [branch_name]
-
-Delete a branch in the remote repository:
-```bash
-git branch
 ```
+Forces the deletion of the specified branch, even if it has unmerged changes. Use this with caution, as it discards any changes in the branch.
+
+(2) Delete a branch in the remote repository:
+```bash
 git push origin --delete [branch_name]
-
-Remove references to deleted branches from your local repository:
-```bash
-git branch
 ```
-git fetch --prune
 
-16: Delete the branch
-    (1)(To delete in local branch repo)
-    < git checkout [other_branch] > - Before deleting the branch, switch to a branch other than the one you want to deleting. You cannot delete the branch you are currently on.
-    < git branch -d [branch_name] > - Deletes the specified branch. If the branch has unmerged changes, Git will prevent the deletion,   and you will need to use "-D" to force the deletion. Or
-    < git branch -D [branch_name] > - Forces the deletion of the specified branch, even if it has unmerged changes. Use this with caution, as it discards any changes in the branch.
-    (2)(To delete in remote branch repo)
-    < git push origin --delete [branch_name] > - To delete a remote branch
-    (3)(remove any references to deleted branches from your local repository)
-    < git fetch --prune > - command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote.
-    (To delete a file, just push to branch after changes)
+(3) Remove any references to deleted branches from your local repository:
+```bash
+git fetch --prune
+```
+The above command is used to update your local Git repository by fetching changes from the remote repository and pruning (deleting) any remote branches that no longer exist on the remote(To delete a file, just push to branch after changes).
+
+
 
 
 
