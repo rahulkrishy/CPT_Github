@@ -37,11 +37,34 @@ git
 ```
 If installed correctly, a list of features will appear. If not, re-download and install Git properly.
 
-Configure Git with your GitHub account username and email:
+Then Configure Git with your GitHub account username and email:
 ```bash
 git config --global user.name 'username'
 git config --global user.email 'Email Id'
 ```
+
+## Creating and Cloning Repositories
+Create a "new repository" on GitHub and name it. Copy the repository HTTPS URL or To initialize a new Git repository, use:
+```bash
+git init
+```
+It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
+(A Git repository is a virtual storage of your project. It allows you to save versions of your code, which you can access when needed)
+
+Open your terminal (or VSCode editor) and clone the repository:
+```bash
+git clone repository_Url
+```
+if done then we will see ".git" folder in hidden views option in the our local directory
+(Do not do any modification to .git folder, its the link between our local and remote(online) repositories).
+
+
+
+
+07: Once the repository is cloned,
+    create a project file and follow below steps to push from your local repository to remote(online) GitHub repository. 
+    (General Rule: if any changes made in local repo, we need to do nessecary steps reflet in remote repo, and vice versa)
+    (from local to remote(online): add(staging)->commit->push, from remote(online) to local: pull)
 
 
 
