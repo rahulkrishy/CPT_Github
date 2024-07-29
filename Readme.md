@@ -122,3 +122,5 @@
     Reset: Versatile command for moving the branch pointer, unstaging changes, or discarding changes. Requires caution, especially with --hard option.)    
 
 ```
+# License
+[MIT License](LICENSE)
