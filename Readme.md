@@ -124,6 +124,84 @@ To find differences between states of a repository/files, Use:
 git diff
 ```
 
+## Creating Files with PowerShell
+Create an empty file using PowerShell:
+```powershell
+New-Item -ItemType file [file_name.txt]
+```
+Echos(prints) content into a Out-File [file_name.txt]:
+```powershell
+echo "Hello, this is the content of the file" | Out-File [file_name.txt]
+```
+
+
+14: Git Branching and merging
+    (Branches allow you to work on different parts of a project without impacting the main branch.
+    When the work is complete, a branch can be merged with the main project.
+    You can even switch between branches and work on different projects without them interfering with each other)
+    < git branch > - List all of the branches in your repository(branch is a new/separate version of the main repository)
+    < git checkout -b [branch] > - Create a new branch called [branch]
+    < git checkout [branch] > - Switch between branches [branch]
+    < git branch -a > - command is used to list all branches in a Git repository, including both local branches and remote branches
+    (" -a " option stands for "all").
+    
+## Branching and Merging
+Branches allow you to work on different parts of a project without impacting the main branch. Create a new branch:
+
+bash
+Copy code
+git branch
+List all branches:
+
+bash
+Copy code
+git branch -a
+Create a new branch:
+
+bash
+Copy code
+git checkout -b [branch]
+Switch between branches:
+
+bash
+Copy code
+git checkout [branch]
+
+## Renaming and Deleting Branches
+Rename a branch in the local repository:
+
+bash
+Copy code
+git checkout [other_branch]
+git branch -m [old_branch_name] [new_branch_name]
+Rename a branch in the remote repository:
+
+bash
+Copy code
+git push origin --delete [old_branch_name]
+git push origin [new_branch_name]
+Delete a branch in the local repository:
+
+bash
+Copy code
+git checkout [other_branch]
+git branch -d [branch_name]
+Force delete a branch with unmerged changes:
+
+bash
+Copy code
+git branch -D [branch_name]
+Delete a branch in the remote repository:
+
+bash
+Copy code
+git push origin --delete [branch_name]
+Remove references to deleted branches from your local repository:
+
+bash
+Copy code
+git fetch --prune
+
 
 
 
