@@ -73,7 +73,7 @@ Or add all file changes:
 ```bash
 git add .
 ```
-(git add does not really affect the repository in any significant way—changes are not actually recorded until you run git commit) <br>
+(git add does not affect the repository in any significant way—changes are not recorded until you run git commit) <br>
 View the state of the working directory and the staging area:
 ```bash
 git status
@@ -82,7 +82,7 @@ Commit the changes:
 ```bash
 git commit 
 ```
-(command captures a snapshot of the projects currently staged changes) <br>
+(command captures a snapshot of the project's currently staged changes) <br>
 Or commit with a message for a specific file:
 ```bash
 git commit -m "message/comment" *filename
