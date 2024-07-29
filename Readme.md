@@ -60,10 +60,13 @@ if done then we will see the '.git' folder in the hidden views option in our loc
 
 ## Working with Local and Remote Repositories
 
-Once the repository is cloned, create a project file. To reflect changes from your local repository to the remote GitHub repository, follow these general rules: <br> 
+Once the repository is cloned, create a project file. To reflect changes from your local repository to the remote GitHub repository, follow these general rules:
 (General Rule: if any changes are made in the local repo, we need to do the necessary steps to reflect in the remote repo, and vice versa). <br> 
 From local to remote(online): add (staging) -> commit -> push <br> 
 From remote(online) to local: pull
+
+## Git Staging and Committing
+
 
 
 
