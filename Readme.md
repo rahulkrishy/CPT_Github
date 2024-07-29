@@ -1,9 +1,5 @@
 # Welcome to Explore-Learn-Practice(ELP) Repository for Git and GitHub!
 
-This repository, named `ELP_Github`, is part of my Explore-Learn-Practice(ELP) series where I document my learning journey. 
-Here, you'll find a comprehensive guide to the essential steps and commands for setting up and using Git and GitHub effectively. 
-Whether you're a beginner or looking to refresh your skills, this repository provides clear, practical instructions to help you master version control and collaboration with Git and GitHub.
-
 ## Table of Contents
 
 1. [Installation](#installation)
