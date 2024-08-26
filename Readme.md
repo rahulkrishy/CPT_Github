@@ -297,4 +297,3 @@ Reset: Versatile command for moving branch pointer, unstaging changes, or discar
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![license](https://img.shields.io/github/license/rahulkrishy/ELP_Github?style=for-the-badge)](LICENSE)
