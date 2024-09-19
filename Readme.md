@@ -1,5 +1,5 @@
 # Welcome to Explore-Learn-Practice(ELP) Repository for Git and GitHub!
-
+---
 ## Table of Contents
 
 1. [Installation](#installation)
