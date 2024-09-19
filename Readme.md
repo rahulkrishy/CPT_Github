@@ -294,6 +294,7 @@ git reset [file_name]
 Revert: Safely undoes changes, preserving commit history. <br>
 Reset: Versatile command for moving branch pointer, unstaging changes, or discarding changes. Requires caution, especially with --hard option.)
 
+---
 
 ## 📜 License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
