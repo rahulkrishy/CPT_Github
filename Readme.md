@@ -1,6 +1,6 @@
 # Welcome to CPT(Concepts-Practices-Tasks) Repository for Git and GitHub!
 ---
-## Table of Contents
+## 📋 Table of Contents
 
 1. [Installation](#installation)
 2. [GitHub Sign-Up](#github-sign-up)
